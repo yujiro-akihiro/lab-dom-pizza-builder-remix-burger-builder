@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="burger">
+            <div class="bun top"></div>
+            <div class="patty beef"></div>
+            <div class="patty chicken"></div>
+            <div class="patty vegan"></div>
+            <div class="cheese"></div>
+            <div class="lettuce"></div>
+            <div class="tomato"></div>
+            <div class="onion"></div>
+            <div class="sauce ketchup"></div>
+            <div class="sauce chili"></div>
+            <div class="sauce bbq"></div>
+            <div class="bun bottom"></div>
+        </div>
+
+        <div class="controls">
+            <h2>Build Your Burger</h2>
+            <button class="btn btn-beef" data-ingredient="beefPatty">Beef Patty</button>
+            <button class="btn btn-chicken" data-ingredient="chickenPatty">Chicken Patty</button>
+            <button class="btn btn-vegan" data-ingredient="veganPatty">Vegan Patty</button>
+            <button class="btn btn-cheese" data-ingredient="cheese">Cheese</button>
+            <button class="btn btn-lettuce" data-ingredient="lettuce">Lettuce</button>
+            <button class="btn btn-tomato" data-ingredient="tomato">Tomato</button>
+            <button class="btn btn-onion" data-ingredient="onion">Onion</button>
+            <button class="btn btn-ketchup" data-ingredient="ketchup">Ketchup</button>
+            <button class="btn btn-chili" data-ingredient="chiliSauce">Chili Sauce</button>
+            <button class="btn btn-bbq" data-ingredient="bbqSauce">BBQ Sauce</button>
+        </div>
+
+        <aside class="panel price">
+            <h2>Your Burger's Price</h2>
+            <b>$5.00 basic burger</b>
+            <ul>
+                <!-- List items will be inserted here dynamically -->
+            </ul>
+            <strong>$5.00</strong>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

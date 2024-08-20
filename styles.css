@@ -1,0 +1,148 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.burger {
+    position: relative;
+    width: 200px;
+    height: 250px;
+}
+
+.bun {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: #f5a623; /* Bun color */
+    border-radius: 50%;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.patty {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #7f4f28; /* Patty color */
+    border-radius: 30px;
+    top: 50px;
+}
+
+.patty.chicken {
+    background-color: #d4a021; /* Chicken patty color */
+}
+
+.patty.vegan {
+    background-color: #9c6d34; /* Vegan patty color */
+}
+
+.cheese {
+    position: absolute;
+    width: 80%;
+    height: 20px;
+    background-color: #f9d86b; /* Cheese color */
+    border-radius: 10px;
+    top: 80px;
+    left: 10%;
+}
+
+.lettuce {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #8bc34a; /* Lettuce color */
+    border-radius: 10px;
+    top: 100px;
+}
+
+.tomato {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #f44336; /* Tomato color */
+    border-radius: 10px;
+    top: 120px;
+}
+
+.onion {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #ffffff; /* Onion color */
+    border-radius: 10px;
+    top: 140px;
+}
+
+.sauce {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    top: 160px;
+}
+
+.sauce.ketchup {
+    background-color: rgba(255, 0, 0, 0.6); /* Ketchup color */
+}
+
+.sauce.chili {
+    background-color: rgba(255, 87, 34, 0.6); /* Chili color */
+}
+
+.sauce.bbq {
+    background-color: rgba(139, 69, 19, 0.6); /* BBQ color */
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.controls h2 {
+    margin-bottom: 20px;
+}
+
+.controls .btn {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.controls .btn:hover {
+    background-color: #0056b3;
+}
+
+.controls .btn.active {
+    background-color: #28a745;
+}
+
+.panel.price {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
